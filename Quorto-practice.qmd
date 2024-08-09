@@ -8,8 +8,10 @@ editor_options:
   chunk_output_type: console
 ---
 
-## 
+## Hi Amanda, its Rachel!
+
 *Amanda Overbye*
+
 ```{r}
 
 #| message: false
@@ -18,6 +20,7 @@ library(tidyverse)
 ```
 
 'head()', 'tail()', and 'dim()', on the 'dplyr::starwars' data fram:
+
 ```{r}
 #| include: false
 # doing data exploration of db(starwars)
@@ -26,8 +29,8 @@ tail(starwars)
 dim(starwars)
 ```
 
-Creat a ggplot (scatterplot) of character mass (y-axis) and height (x-axis)
-- update the color of the points so the color changes based on value of 'mass'
+Creat a ggplot (scatterplot) of character mass (y-axis) and height (x-axis) - update the color of the points so the color changes based on value of 'mass'
+
 ```{r}
 
 #| echo: false
@@ -39,9 +42,10 @@ ggplot(data = starwars, aes(x = height, y = mass, color = mass)) +
 
 ```
 
-- create a historgam of character heights 
-- update the fill color ('fill') to purple and the outside boarder line ('color') of each histogram bin to orange
-- update your code chunk options so that only your code and output graph appear in the rendered doc (no warnings or messages)
+-   create a historgam of character heights
+-   update the fill color ('fill') to purple and the outside boarder line ('color') of each histogram bin to orange
+-   update your code chunk options so that only your code and output graph appear in the rendered doc (no warnings or messages)
+
 ```{r}
 #| fig-cap: "caption text"
 #| fig-alt: "figure alt text"
@@ -52,7 +56,8 @@ ggplot(data = starwars, aes(x = height)) +
  
 ```
 
-'df$colname'
+'df\$colname'
+
 ```{r}
 sw_height_mean <- round(x = mean(starwars$height, na.rm = TRUE),digits = 3)
 
@@ -63,4 +68,3 @@ The mean height of all Starwars characters is `r sw_height_mean`
 ```{r}
 
 ```
-
